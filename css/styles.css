@@ -22,6 +22,8 @@ body {
     --black-transparent: rgba(47, 48, 58, 0.8);
     --backdrop: rgba(0, 0, 0, 0.2);
     --btn-border: rgba(0, 0, 0, 0.1);
+    --label-box: #757575;
+    --fieldset: rgba(33, 33, 33, 0.2);
 }
 .reset-margin {
     margin: 0;
@@ -549,4 +551,104 @@ ul li {
     opacity: 0;
     pointer-events: none;
     scale: 0;
+}
+
+/* -----Questionnaire----- */
+
+.my-form {
+    padding-inline: 40px;
+    padding-top: 40px;
+}
+
+.fieldset-box {
+    display: flex;
+    position: relative;
+    height: 40px;
+    border: 1px solid var(--fieldset);
+    border-radius: 4px;
+    margin-block: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.legend-style {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.svg-in-box {
+    margin-right: 12px;
+}
+
+.input-in-box {
+    border: 0;
+    outline: 0;
+}
+
+.label-in-box {
+    position: absolute;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--label-box);
+    top: -18px;
+    left: 0;
+}
+.your-comment {
+    position: relative;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+.textarea-comment {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border: 0;
+    outline: 0;
+    resize: none;
+}
+
+.legal-text {
+    line-height: 1.71;
+    color: var(--label-box);
+    position: relative;
+}
+.legal-text a {
+    color: var(--brand-color);
+}
+.check-icon {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    opacity: 0;
+}
+input:checked + span .check-icon {
+    opacity: 1;
+}
+
+.send-button {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--brand-color);
+    color: var(--main-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: 0;
+    
+}
+
+.send-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
