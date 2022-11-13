@@ -559,7 +559,6 @@ ul li {
     padding-inline: 40px;
     padding-top: 40px;
 }
-
 .fieldset-box {
     display: flex;
     position: relative;
@@ -570,7 +569,6 @@ ul li {
     display: flex;
     align-items: center;
 }
-
 .legend-style {
     text-align: center;
     font-weight: 700;
@@ -579,16 +577,13 @@ ul li {
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
-
 .svg-in-box {
     margin-right: 12px;
 }
-
 .input-in-box {
     border: 0;
     outline: 0;
 }
-
 .label-in-box {
     position: absolute;
     font-size: 12px;
@@ -601,7 +596,6 @@ ul li {
 .your-comment {
     position: relative;
     height: 120px;
-    padding: 12px 16px;
     margin-bottom: 20px;
 }
 .textarea-comment {
@@ -609,11 +603,12 @@ ul li {
     height: 100%;
     width: 100%;
     left: 0;
+    top: 0;
     border: 0;
     outline: 0;
     resize: none;
+    padding: 12px 16px;
 }
-
 .legal-text {
     line-height: 1.71;
     color: var(--label-box);
@@ -621,6 +616,10 @@ ul li {
 }
 .legal-text a {
     color: var(--brand-color);
+}
+.legal-center {
+    border: 0;
+    outline: 0;
 }
 .check-icon {
     position: absolute;
@@ -631,7 +630,6 @@ ul li {
 input:checked + span .check-icon {
     opacity: 1;
 }
-
 .send-button {
     width: 200px;
     height: 50px;
@@ -643,12 +641,16 @@ input:checked + span .check-icon {
     line-height: 1.87;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    border: 0;
-    
+    border: 0; 
 }
-
 .send-button-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+.fieldset-box:focus, .fieldset-box:hover .svg-in-box {
+    fill: var(--brand-color);
+}
+.fieldset-box:focus, .fieldset-box:hover {
+    border-color: var(--brand-color);
 }
