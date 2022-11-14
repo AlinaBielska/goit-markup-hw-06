@@ -43,9 +43,11 @@ h3 {
 }
 
 ul ol {
-    list-style-type: none;
     margin: 0;
     padding-left: 0;
+}
+li {
+    list-style-type: none;
 }
 .container {
     width: 1200px;
