@@ -24,6 +24,7 @@ body {
     --btn-border: rgba(0, 0, 0, 0.1);
     --label-box: #757575;
     --fieldset: rgba(33, 33, 33, 0.2);
+    --subscription: rgba(255, 255, 255, 0.3);
 }
 .reset-margin {
     margin: 0;
@@ -306,7 +307,7 @@ ul li {
     flex-direction: column;
     gap: 9px;
 }
-.container.down {
+.info-down {
     gap: 20px;
     display: inline-block;
     display: flex;
@@ -566,8 +567,8 @@ ul li {
     border: 1px solid var(--fieldset);
     border-radius: 4px;
     margin-block: 28px;
-    display: flex;
     align-items: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .legend-style {
     text-align: center;
@@ -579,6 +580,7 @@ ul li {
 }
 .svg-in-box {
     margin-right: 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-in-box {
     border: 0;
@@ -653,4 +655,60 @@ input:checked + span .check-icon {
 }
 .fieldset-box:focus, .fieldset-box:hover {
     border-color: var(--brand-color);
+}
+
+
+.fieldset-subscription {
+    display: flex;
+    position: relative;
+    width: 358px;
+    height: 50px;
+    border: 1px solid var(--subscription);
+    border-radius: 4px;
+}
+.label-subscription {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-white);
+}
+.input-subscription {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--color-contact);
+    background-color;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+.subscribe-btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    color: var(--main-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.subscribe-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+.subscribe-form {
+    display: flex;
+    gap: 12px;
+}
+.background-styling.down .container {
+    display: flex;
+    gap: 70px;
+    align-items: center;
 }
