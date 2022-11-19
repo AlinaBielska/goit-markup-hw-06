@@ -585,6 +585,7 @@ li {
 .input-in-box {
     border: 0;
     outline: 0;
+    width: 90%;
 }
 .label-in-box {
     position: absolute;
@@ -653,17 +654,12 @@ input:checked + span .check-icon {
     justify-content: center;
     margin-top: 30px;
 }
-.fieldset-box:focus, .fieldset-box:hover .svg-in-box {
+.fieldset-box:hover .svg-in-box {
     fill: var(--brand-color);
 }
 .fieldset-box:hover {
     border-color: var(--brand-color);
 }
-.fieldset-box:focus {
-    border-color: var(--brand-color);
-}
-
-
 
 .fieldset-subscription {
     display: flex;
